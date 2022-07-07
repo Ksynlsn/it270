@@ -1,0 +1,71 @@
+/*Styles for my first WP Theme
+Name: First Theme
+Author: Kacie
+Date: 6/30/2022
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+html {
+    margin-top: 0;
+}
+
+body {
+    background :rgb(226, 222, 222);
+}
+
+header {
+    background: rgb(217, 217, 122);
+}
+
+#top {
+    height: 60px;
+    background: rgb(226, 157, 29);
+}
+
+#inner-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+    background: rgb(236, 186, 122);
+}
+
+#hero { /*background image*/
+    height: 400px;
+    background: red;
+}
+
+#wrapper {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+footer {
+    background: rgb(135, 133, 133);
+    height: 300px;
+    clear: both;
+}
+
+main {
+    width: 62%;
+    float: left;
+}
+
+/*typography*/
+
+p {
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.meta span {
+    display: block;
+    font-style: italic;
+}
