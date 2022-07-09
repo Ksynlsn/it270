@@ -25,6 +25,5 @@
 <?php comments_template(); ?>
 
 </main>
-<h2>TEST</h2>
 </div><!--wrapper-->
 <?php get_footer();?>

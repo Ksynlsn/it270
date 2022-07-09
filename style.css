@@ -57,6 +57,10 @@ main {
 
 /*typography*/
 
+h3, h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
 p {
     margin-bottom: 20px;
 }
@@ -69,3 +73,35 @@ p {
     display: block;
     font-style: italic;
 }
+
+/*form*/
+
+#commentform {
+    border: 1px solid tan;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+}
+
+.comment-notes {
+    font-size: .9em;
+    font-style: italic;
+    color: rgb(12, 1, 1);
+    margin-bottom: 6px;
+}
+
+label {
+    display: block
+}
+
+.comment-form-cookies-consent label {
+    display: inline;
+}
+
+.comment-form p {
+    margin-bottom: 10px;
+}
+
+.commentlist {
+    margin: 10px 0 15px 30px;
+}
+
