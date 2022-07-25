@@ -40,13 +40,9 @@
 <p>Sorry, we could not find any posts using your search terms. 
 Try searching again using different keywords</p>
 <?php endif ;?>
-
-<?php get_search_form() ;?>
-
 </main>
 
-<aside>this is my index.php page</aside>
-
+<?php get_sidebar() ;?>
 
 </div><!--wrapper-->
 <?php get_footer();?>

@@ -23,6 +23,9 @@
 <?php the_content() ;?>
 
 </article>
+<span class="next-previous">
+<?php (previous_post_link()) ? '%link' : ''; ?> &nbsp; &nbsp; <?php (next_post_link()) ? '%link' : ''; ?>
+</span>
 <?php endwhile ;?>
 
 <?php else : ?>
@@ -30,7 +33,9 @@
 <?php endif ;?>
 
 <?php comments_template(); ?>
-
 </main>
+
+<?php get_sidebar() ;?>
+
 </div><!--wrapper-->
 <?php get_footer();?>

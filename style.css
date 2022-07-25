@@ -15,19 +15,22 @@ html {
 }
 
 body {
-    background :rgb(226, 222, 222);
+    background :#fff;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
-    background: rgb(217, 217, 122);
+    background: #fff;
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid #888;
 }
 
 #top {
-    background: rgb(226, 157, 29);
+    background: #aa9a4a;
 	padding: 10px 30px 10px 10px;
 	overflow: hidden;
 }
@@ -35,10 +38,50 @@ header {
 #inner-header {
     max-width: 1200px;
     margin: 0 auto;
-    background: rgb(206, 161, 106);
 	padding: 10px 20px 10px 0;
 	clear: both;
 }
+
+/*footer*/
+
+.row {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.inner-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+	padding: 10px 0;
+}
+
+.third { 
+	width: 31.91%;
+	float: left;
+	margin-right: 2.12%; /* 20px / 940 */
+	text-align: center;
+}
+
+.third:last-of-type {
+	margin-right: 0;
+}
+
+footer {
+    background: #ccc;
+    clear: both;
+}
+
+.bottom  ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	list-style-type: none;
+}
+
+.bottom {
+	padding-bottom: 20px;
+}
+/* end footer */
 
 img {
 	max-width: 100%;
@@ -64,25 +107,26 @@ img {
 	background-attachment: fixed;
 	background-size: 100%;
 	background-position: 0 100px;
-	min-height: 350px;
+	min-height: 370px;
 	max-width: 100%;
 	background-repeat: no-repeat;
 }
 
+/*featured images tours pages*/
+main .attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 15px;
+  }
+
 #wrapper {
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 40px auto;
 }
 
 .error404 #wrapper,
 .search #wrapper {
 	margin: 140px auto 0 auto;
-}
-
-footer {
-    background: rgb(135, 133, 133);
-    height: 300px;
-    clear: both;
 }
 
 main {
@@ -93,12 +137,10 @@ main {
 aside {
     float: right;
     width: 35%;
-    height: 400px;
-    background:rgb(187, 175, 175)
 }
 
-article {
-	clear: both;
+.single div.meta {
+	margin-bottom: 5px;
 }
 
 .nav-button {
@@ -128,7 +170,7 @@ article {
 #site-navigation li:hover .sub-menu {
 	display: block;
 	position: absolute;
-	background: #fff;
+	background: #eee;
 	padding: 5px;
 	width: 180px;
 }
@@ -136,29 +178,158 @@ article {
 #site-navigation li:hover .sub-menu li {
 	margin-left: 0;
 	float: none;
+	line-height: 1.4;
 }
+
 
 /*typography*/
-
-h3, h2, h1 {
-    margin-top: 10px;
-    margin-bottom: 20px;
+a {
+	color:rgb(138, 48, 6);
+	text-decoration: none;
 }
 
-h1, h2 {
-    color:rgb(138, 48, 6)
+h3, h1 {
+    margin-bottom: 20px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color:rgb(138, 48, 6)
+}
+
+h2 {
+    color:rgb(138, 48, 6);
+	font-size: 1.8em;
+	margin: 10px;
+}
+
+.home h1 {
+	font-size: 3em;
+	text-align: center;
+	margin-bottom: 14px;
+	color: #aa9a4a;
+}
+
+.home h2 {
+	text-align: center;
+}
+
+.inner-footer h2 {
+	text-align: center;
+}
+
+.wp-block-quote {
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+}
+
+.third span a {
+	display: block;
+	color:#666;
+	font-style: italic;
+    margin-top:5px;
+	font-size: 1.1em;
 }
 
 p {
     margin-bottom: 20px;
+	line-height: 1.66;
+}
+
+#disclaimer {
+	color: #ea0a0a;
+	font-style: italic;
+}
+
+.home p, 
+.home .wp-block-quote {
+	padding: 0px 2%;
+	margin: 20px;
+}
+
+.row p {
+	font-size: .92em;
+}
+
+.third h3, 
+.col8 h3 {
+	font-size: 1.8em;
+	margin-bottom: 10px;
+	color:#f28d35;
+}
+
+#wrapper .third {
+	padding: 0;
+}
+
+.col8 {
+	float: left;
+	width: 48.93%; /*460 / 940*/
+	text-align:center;
+}
+
+.col8:last-of-type {
+	float: right;
+}
+
+.inner-widget h3 { /* inner-widget == 'about' */
+	background: brown;
+	font-size: 1.4em;
+	padding: 3%;
+	color: #fff;
+	margin-bottom: 10px;;
+}
+
+.inner-tours {
+	background: #ccc;
+	padding: 3%;
+}
+
+.inner-tours h3 {
+	color: orange;
+}
+
+.inner-specials { /* tour special sidebar */
+	margin-top: 20px;
+	background: #eeede8;
+	padding: 3%;
+}
+
+.widget_text.inner-specials {
+	line-height: 2;
+	padding: 6%;
+	text-align: justify;
+}
+
+.buy-now { /* buy widget */
+	border: 2px solid black;
+	clear: both;
+	text-align: center;
+	padding: 10px;
+	width: 75%;
+	margin: 0 auto;
+}
+
+aside ul {
+	margin-left: 5%;
+	margin-bottom: 12px;
+	list-style-type: none;
 }
 
 .title {
     font-size: 2em;
+	margin-bottom: 10px;
+}
+
+.block {
+	display: block;
+	font-style: italic;
 }
 
 .thumbnail {
 	margin: 15px 0 15px 0;
+}
+
+.meta, .search, .pagetitle {
+	margin-bottom: 10px;
 }
 
 .meta span {
@@ -207,10 +378,29 @@ label {
 	float: right;
 }
 
+.seraching-box {
+	width: 62%;
+	float: left;
+}
+
+/* posts */
+
+.post, .posts {
+	margin-bottom: 25px;
+}
+
 /* media queries */
 
 @media screen and (max-width:1450px) {
 	
+	#inner-header {
+		padding: 10px 25px 10px 25px;
+	}
+	
+	#wrapper {
+		max-width: 1200px;
+	}
+
 	.home #hero {
 		background-image: none;
 		margin-top: 100px;
@@ -228,10 +418,18 @@ label {
 	}
 }
 
-/* astuteos media queries */
 
 @media only screen and (max-width: 700px) {
 
+	.home h1 {
+		font-size: 2em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	/* astuteos media queries */
 	/* Navigation Button
 	-------------------------------------------------------- */
 

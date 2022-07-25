@@ -1,5 +1,5 @@
 <?php get_header();
-/* Template Name: Tours Page */
+/* Template Name: About Page */
 ?>
 
 <div id="hero">
@@ -9,10 +9,6 @@
 <div id="wrapper">
 <main>
 <?php if(have_posts()) : ?> <!-- if we have posts/pages- show them! -->
-<!-- featured image post -->
-<?php if(has_post_thumbnail()) : ?>
-<?php the_post_thumbnail(400, 400) ;?>
-<?php endif ;?>
 
 <?php while(have_posts()) : the_post() ;?> <!-- show posts by using while loop -->
 <!-- WE ARE DISPLAYING THE CONTENT ON THIS PAGE - THE HOME PAGE -->
@@ -26,11 +22,8 @@
 </main>
 
 <aside id="secondary" class="widget-area">
-    <?php dynamic_sidebar( 'sidebar-tours' ); ?>
-    <?php dynamic_sidebar( 'sidebar-tours-specials' ); ?>
+    <?php dynamic_sidebar( 'sidebar-about' ); ?>
 </aside><!-- #secondary -->
-
-    <?php dynamic_sidebar( 'sidebar-buy-now' ); ?>
 
 </div><!--wrapper-->
 <?php get_footer();?>

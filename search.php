@@ -48,7 +48,7 @@ Try searching again using different keywords</p>
 
 </main>
 
-<aside>this is my search.php page</aside>
+<?php get_sidebar() ;?>
 
 
 </div><!--wrapper-->
