@@ -1,6 +1,6 @@
 <footer>
 
-<div class="inner-footer">
+<div class="inner-footer top">
 	<h2>Tours of the Month</h2>
 
 	<?php dynamic_sidebar('sidebar-footer') ;?>
@@ -27,5 +27,6 @@
 			});    
 		});
 		</script>
+	<?php wp_footer(); ?>
 </body>
 </html>

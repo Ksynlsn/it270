@@ -42,9 +42,12 @@
 <h2>No Content For: <?php echo get_search_query() ;?></h2>
 <p>Sorry, we could not find any posts using your search terms. 
 Try searching again using different keywords</p>
-<?php endif ;?>
 
-<?php get_search_form() ;?>
+<div id="bottom-search">
+    <?php get_search_form() ;?>
+</div>
+
+<?php endif ;?>
 
 </main>
 

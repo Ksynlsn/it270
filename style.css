@@ -55,10 +55,14 @@ header {
 	padding: 10px 0;
 }
 
+.inner-footer.top {
+	padding-right: 2%;
+}
+
 .third { 
 	width: 31.91%;
 	float: left;
-	margin-right: 2.12%; /* 20px / 940 */
+	margin-right: 2.12%; /*20px / 940*/
 	text-align: center;
 }
 
@@ -121,8 +125,8 @@ main .attachment-post-thumbnail.size-post-thumbnail.wp-post-image {
 
 #wrapper {
     max-width: 1200px;
-    margin: 40px auto;
-}
+    margin:20px auto 40px auto;
+} 
 
 .error404 #wrapper,
 .search #wrapper {
@@ -137,6 +141,10 @@ main {
 aside {
     float: right;
     width: 35%;
+}
+
+aside li {
+	line-height: 1.6;
 }
 
 .single div.meta {
@@ -196,8 +204,6 @@ h3, h1 {
 
 h2 {
     color:rgb(138, 48, 6);
-	font-size: 1.8em;
-	margin: 10px;
 }
 
 .home h1 {
@@ -207,8 +213,16 @@ h2 {
 	color: #aa9a4a;
 }
 
+.page-template-page-tours h1 {
+	margin-top: 10px;
+}
+
 .home h2 {
 	text-align: center;
+}
+
+.page-template-page-tours h2 {
+	margin-bottom: 10px;
 }
 
 .inner-footer h2 {
@@ -232,6 +246,7 @@ h2 {
 p {
     margin-bottom: 20px;
 	line-height: 1.66;
+	width: 95%;
 }
 
 #disclaimer {
@@ -283,12 +298,16 @@ p {
 	padding: 3%;
 }
 
+.inner-tours p {
+	margin-bottom: 0;
+}
+
 .inner-tours h3 {
 	color: orange;
 }
 
 .inner-specials { /* tour special sidebar */
-	margin-top: 20px;
+	margin: 20px auto 20px auto;
 	background: #eeede8;
 	padding: 3%;
 }
@@ -341,8 +360,42 @@ aside ul {
 	display: none;
 }
 
-/*form*/
+/* formidable forms */
+	/* newsletter aside */
+.frm_form_title {
+	font-size: 1.4em !important;
+	background: none !important;
+	padding: 0 !important;
+}
 
+.with_frm_style legend + h3, 
+.with_frm_style h3.frm_form_title {
+	margin-bottom: 15px !important;
+}
+
+.frm_button_submit  {
+	background:#A69851 !important;
+	border-color: #A69851 !important;
+}
+
+
+/* contact form */
+.contact h1 {
+	text-align: center;
+}
+
+.frm_fields_container {
+	width: 80%;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.contact h3 {
+	text-align: center;
+}
+
+
+/* comment form*/
 #commentform {
     border: 1px solid tan;
     padding: 10px;
@@ -354,6 +407,11 @@ aside ul {
     font-style: italic;
     color: rgb(12, 1, 1);
     margin-bottom: 6px;
+}
+
+#reply-title {
+	margin-top: 20px;
+	font-style: italic;
 }
 
 label {
@@ -383,6 +441,10 @@ label {
 	float: left;
 }
 
+#bottom-search { /*search box on search.php*/
+	margin-bottom: 20px;
+}
+
 /* posts */
 
 .post, .posts {
@@ -399,6 +461,7 @@ label {
 	
 	#wrapper {
 		max-width: 1200px;
+		margin:25px;
 	}
 
 	.home #hero {
@@ -418,8 +481,89 @@ label {
 	}
 }
 
+@media only screen and (max-width: 900px) {
+	body {
+		font-size: 95%;
+	}
+
+	.third {
+		width: auto;
+		float: none;
+		margin-right: 0;
+	}
+
+	.third img {
+		margin: 0 auto 15px auto;
+		display: block;
+	}
+
+	.third h3 {
+		margin-top: 20px;
+	}
+
+	main {
+		width: 60%;
+	}
+
+	aside {
+		width: 37%;
+	}
+
+	.bottom ul { 
+		line-height: 1.8;
+		text-align: center;
+		flex-direction: column;
+	}
+
+}
+
 
 @media only screen and (max-width: 700px) {
+	header {
+		padding-top: 33px;
+	}
+
+	.home #hero {
+		margin-top: 83px;
+	}	
+		
+	#logo {
+		margin: 0 auto;
+		display: block;
+	}
+		
+	.inner-page #hero img {
+		display: none;
+	}
+		
+	main, 
+	aside {
+		float: none;
+		width: auto;
+	}
+
+	.blog main,
+	.search main,
+	.archive main {
+		text-align: center;
+	}
+		
+	#wrapper {
+		margin: 13px;
+	}
+
+	#top #searchform {
+		float: none;
+		position: fixed;
+		top: 10px;
+		right: 10px;
+		z-index: 999;
+		height: 30px;
+	}
+		
+	.search #wrapper {
+		margin: 120px 13px 20px 13px; 
+	}
 
 	.home h1 {
 		font-size: 2em;
@@ -429,9 +573,25 @@ label {
 		font-size: 1.5em;
 	}
 
+	.widget_text.inner-specials {
+		margin-bottom: 20px;
+	}
+
+	.buy-now { /* buy widget */
+		width: 100%;
+	}
+
+
 	/* astuteos media queries */
 	/* Navigation Button
 	-------------------------------------------------------- */
+
+	#searchsubmit {
+		color: #fff;
+		background: tan;
+		border-radius: 37%;
+		padding: 2px 4px;
+	}
 
 	.nav-button {
 		display: block;
@@ -470,7 +630,7 @@ label {
 	.primary-nav {
 		width: 100%;
 		float: none;
-		background-color: #9b3a09; /* change the menu color */
+		background-color:  #aa9a4a;
 		background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.2));
 		display: block;
 		height: 50px;
